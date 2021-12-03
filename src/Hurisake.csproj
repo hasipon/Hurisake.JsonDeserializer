@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net5.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <PackageId>Hurisake.JsonDeserializer</PackageId>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/hasipon/Hurisake.JsonDeserializer</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/hasipon/Hurisake.JsonDeserializer</PackageProjectUrl>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+</Project>

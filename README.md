@@ -1,0 +1,1 @@
+# Hurisake.JsonDeserializer

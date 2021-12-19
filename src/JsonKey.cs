@@ -19,18 +19,28 @@ namespace Hurisake
             return new JsonKey(Encoding.UTF8.GetBytes(value));
         }
 
+        public string Text
+        {
+            get
+            {
+                if (_s != null)
+                {
+                    return Encoding.UTF8.GetString(_s);
+                }
+                var h = _hashCode;
+                var a = new List<byte>(8);
+                while (h != 0)
+                {
+                    a.Insert(0, (byte)(h & 0xFF));
+                    h >>= 8;
+                }
+                return Encoding.UTF8.GetString(a.ToArray());
+            }
+        }
+
         public override string ToString()
         {
-            if (_s != null) return "\"" + Encoding.UTF8.GetString(_s) + "\"";
-            var h = _hashCode;
-            var a = new List<byte>();
-            while (h != 0)
-            {
-                a.Insert(0, (byte)(h & 0xFF));
-                h >>= 8;
-            }
-
-            return "\"" + Encoding.UTF8.GetString(a.ToArray()) + "\"";
+            return "\"" + Text + "\"";
         }
 
         private readonly ulong _hashCode;

@@ -8,7 +8,7 @@
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/hasipon/Hurisake.JsonDeserializer</RepositoryUrl>
     <PackageProjectUrl>https://github.com/hasipon/Hurisake.JsonDeserializer</PackageProjectUrl>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
 </Project>

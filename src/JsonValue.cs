@@ -172,6 +172,8 @@ namespace Hurisake
             return _o.ContainsKey(k);
         }
 
+        public IEnumerable<JsonKey>? Keys => _o?.Keys;
+
         public int Count => _a?.Count ?? (_o?.Count ?? 0);
 
         public override string ToString()
